@@ -1,0 +1,101 @@
+1. Print Hello World
+2. Add two numbers
+3. Find largest of two numbers
+4. Check even or odd
+5. Check positive, negative or zero
+6. Find factorial
+7. Fibonacci series
+8. Prime number check
+9. Palindrome number
+10. Reverse a number
+11. Sum of digits
+12. Armstrong number
+13. Perfect number
+14. Multiplication table
+15. Count digits
+16. Power of number
+17. Swap two numbers
+18. GCD
+19. LCM
+20. ASCII value
+21. Simple calculator
+22. Celsius to Fahrenheit
+23. Area of circle
+24. Area of rectangle
+25. Simple interest
+26. Print 1 to 100
+27. Print even numbers
+28. Print odd numbers
+29. Star triangle pattern
+30. Number pyramid
+31. Reverse triangle
+32. Floyd’s triangle
+33. Sum of n numbers
+34. Prime numbers between 1–100
+35. Multiplication tables 1–10
+36. Factorial using while
+37. Sum of series
+38. Pattern using nested loop
+39. Diamond pattern
+40. Hollow square
+41. Reverse a string
+42. Palindrome string
+43. Count vowels
+44. Count consonants
+45. Count words
+46. Uppercase to lowercase
+47. Remove spaces
+48. Replace word
+49. Find length without len()
+50. Check substring
+51. Largest in list
+52. Smallest in list
+53. Sum of list
+54. Average of list
+55. Remove duplicates
+56. Sort list
+57. Second largest
+58. Merge two lists
+59. Reverse list
+60. Count element
+61. Even numbers list
+62. Odd numbers list
+63. List comprehension
+64. Tuple to list
+65. List to tuple
+66. Create dictionary
+67. Merge dictionaries
+68. Count word frequency
+69. Key existence
+70. Max value key
+71. Sort dictionary
+72. Dictionary from two lists
+73. Remove key
+74. Set operations
+75. Remove duplicates using set
+76. Function to add
+77. Recursive factorial
+78. Lambda square
+79. Class for Student
+80. Constructor example
+81. Inheritance program
+82. Method overriding
+83. BankAccount class
+84. Rectangle class
+85. Circle class
+86. Create file
+87. Read file
+88. Write file
+89. Append file
+90. Count lines
+91. Count words in file
+92. Copy file
+93. Try-except demo
+94. ZeroDivision error
+95. FileNotFound error
+96. Menu driven program
+97. Student marks program
+98. Number sorting
+99. Simple login system
+100. Mini project using Python
+
