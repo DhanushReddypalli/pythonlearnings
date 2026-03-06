@@ -1,0 +1,39 @@
+{% extends "base.html" %}
+{% block content %}
+<div class="row">
+    <div class="col-md-8">
+        <h1 class="mb-3">Welcome to Smart Farm Market</h1>
+        <p class="lead">Connect farmers and customers directly.</p>
+
+        <h4>Seasonal suggestions</h4>
+        <ul>
+            {% for item in suggestions %}
+            <li>{{ item }}</li>
+            {% endfor %}
+        </ul>
+
+        <h4 class="mt-4">Best farmers (by rating)</h4>
+        <ul>
+            {% for f in farmers %}
+                {% set avg, count = (0, 0) %}
+                {% for r in [] %}
+                {% endfor %}
+                <li>{{ f.username }} - location: {{ f.location }}</li>
+            {% else %}
+                <li>No farmers yet</li>
+            {% endfor %}
+        </ul>
+    </div>
+    <div class="col-md-4">
+        <div class="card mb-3">
+            <div class="card-body">
+                <h5 class="card-title">Get started</h5>
+                <p class="card-text">Register as farmer or customer to use the system.</p>
+                <a href="{{ url_for('farmer_register') }}" class="btn btn-success mb-2 w-100">Farmer Registration</a>
+                <a href="{{ url_for('customer_register') }}" class="btn btn-outline-success mb-2 w-100">Customer Registration</a>
+                <a href="{{ url_for('login') }}" class="btn btn-secondary w-100">Login</a>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

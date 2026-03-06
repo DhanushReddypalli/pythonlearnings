@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+{% block content %}
+<h2>Nearby Farmers</h2>
+
+<p>Your location: <strong>{{ my_location }}</strong></p>
+
+{% if farmers %}
+    <ul>
+    {% for f in farmers %}
+        <li>{{ f.username }} ({{ f.location }})</li>
+    {% endfor %}
+    </ul>
+{% else %}
+    <p>No farmers found in your location.</p>
+{% endif %}
+{% endblock %}
+

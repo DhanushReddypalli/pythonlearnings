@@ -1,0 +1,24 @@
+{% extends "base.html" %}
+{% block content %}
+<h2>Orders for Your Products</h2>
+
+{% if orders %}
+    <ul class="list-group">
+    {% for o in orders %}
+        <li class="list-group-item">
+            <strong>Order #{{ o.id }}</strong> from customer {{ o.customer_id }}
+            <ul>
+                {% for item in o.items %}
+                    {% if item.farmer_id == farmer.id %}
+                    <li>{{ item.name }} - {{ item.quantity }} x {{ item.price }}</li>
+                    {% endif %}
+                {% endfor %}
+            </ul>
+        </li>
+    {% endfor %}
+    </ul>
+{% else %}
+    <p>No orders yet for your products.</p>
+{% endif %}
+{% endblock %}
+

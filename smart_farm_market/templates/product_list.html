@@ -1,0 +1,53 @@
+{% extends "base.html" %}
+{% block content %}
+<h2>Products</h2>
+
+<form method="get" class="row g-2 mb-3">
+    <div class="col-md-4">
+        <input type="text" name="q" value="{{ query }}" class="form-control" placeholder="Search by name">
+    </div>
+    <div class="col-md-4">
+        <input type="text" name="season" value="{{ season }}" class="form-control" placeholder="Season (optional)">
+    </div>
+    <div class="col-md-2">
+        <button type="submit" class="btn btn-success w-100">Search</button>
+    </div>
+</form>
+
+<h5>Seasonal suggestions</h5>
+<ul>
+    {% for s in suggestions %}
+    <li>{{ s }}</li>
+    {% endfor %}
+</ul>
+
+{% if products %}
+<table class="table table-bordered mt-3">
+    <thead>
+    <tr>
+        <th>Name</th>
+        <th>Category</th>
+        <th>Price</th>
+        <th>Farmer</th>
+        <th></th>
+    </tr>
+    </thead>
+    <tbody>
+    {% for p in products %}
+    <tr>
+        <td>{{ p.name }}</td>
+        <td>{{ p.category }}</td>
+        <td>{{ p.price }}</td>
+        <td>{{ p.farmer_location }}</td>
+        <td>
+            <a href="{{ url_for('product_detail', product_id=p.id) }}" class="btn btn-sm btn-outline-primary">View</a>
+        </td>
+    </tr>
+    {% endfor %}
+    </tbody>
+</table>
+{% else %}
+<p>No products available.</p>
+{% endif %}
+{% endblock %}
+
